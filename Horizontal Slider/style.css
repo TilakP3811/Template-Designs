@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    pointer-events: none;
+}
+
+.horizontal-slider{
+    justify-content: center;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.story-container ul{
+    list-style: none;
+    user-select: none;
+    display: flex;
+    overflow-y: auto;
+    padding: 5px 0;
+}
+
+.story-container ul li{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-container ul li:first-child{
+    padding-left: 20px;
+}
+
+.story-container ul li:last-child{
+    padding-right: 20px;
+}
+
+.story-container ul li .story{
+    width: 75px;
+    height: 75px;
+    padding: 1px;
+    position: relative;
+}
+
+.story-container ul li.has-story .story{
+    padding: 2px;
+}
+
+.story-container ul li .story img{
+    padding: 4px;
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.story-container ul li span{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    /* max-width: 85px; */
+    height: 40px;
+}
+
+@media screen and (min-width: 480px){
+    .story-container ul{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slidebar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/814b7c85d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-brand">
+            <i onclick="openSlider()" class="icons fas fa-bars "></i>
+            <p style="cursor: pointer;"><a class="brand" href="#">Monroe by Mars</a></p>
+        </div>
+        <div class="search-cart">
+            <i class="icons fas fa-search "></i>
+            <i class="icons fas fa-shopping-cart "></i>
+        </div>
+    </div>
+    <div class="slidebar">
+        <div class="brand-details">
+            <img class="logo" src="./images/resturant_logo.jpg" alt="">
+            <p style="cursor: pointer;" class="brand-name"><a href="#" class="nav-link-head">Monroe by Mars</a></p>
+            <i onclick="closeSlider()" class="close fas fa-times"></i>
+        </div>
+        <div >
+            <ul>
+                <li class="nav-items"><a href="#" class="nav-link-head">Home</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-head">Digital Menu</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Happy Hours</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Best Sellers</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Food</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Beverage</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Dessert</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Delivery & Pickup</a></li>
+                <li class="nav-items"><a href="#" class="nav-link-sub">Party</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function closeSlider() {
+            document.querySelector(".slidebar").style.width = "0";
+        }
+        function openSlider() {
+            document.querySelector(".slidebar").style.width = "300px";
+        }
+    </script>
+</body>
+
+</html>
