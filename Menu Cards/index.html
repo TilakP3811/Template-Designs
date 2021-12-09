@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cards</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/814b7c85d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="catagary-items">
+        <div class="dropdown">
+            <img src="./images/foods/soup.jpg" alt="" class="dropdown-img">
+            <p class="dropdown-head">Soups</p>
+            <i onclick="openCart()" class="down-arrow fas fa-angle-down"></i>
+            <i onclick="closeCart()" class="up-arrow fas fa-angle-up"></i>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="sub-slider-outer">
+            <div class="sub-slider">
+                <p class="item-name">Get Well Soon Soup</p>
+                <span class="item-prize">₹ 147</span>
+                <i class="cart-icon fas fa-cart-plus"></i>
+            </div>
+            <div class="item-tag">
+                <span class="None tag-name">CHEF'S SPECIAL</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".down-arrow").style.display = "block";
+        document.querySelector(".up-arrow").style.display = "none";
+        document.querySelector(".slider").style.display = "none";
+        function openCart() {
+            document.querySelector(".down-arrow").style.display = "none";
+            document.querySelector(".up-arrow").style.display = "block";
+            document.querySelector(".slider").style.display = "block";
+        }
+
+        function closeCart() {
+            document.querySelector(".down-arrow").style.display = "block";
+            document.querySelector(".up-arrow").style.display = "none";
+            document.querySelector(".slider").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

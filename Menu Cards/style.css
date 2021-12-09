@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.catagary-items{
+    text-align: center;
+}
+
+.dropdown{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: 3.8rem;
+    width: 35rem;
+    border-bottom: solid 1px rgb(190, 187, 187);
+}
+
+.dropdown-img{
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.dropdown-head{
+    letter-spacing: 0.5px;
+    font-size: 19px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.down-arrow{
+    display: block;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 22px;
+    color: rgb(175, 169, 169);
+    transition: 0.3s;
+}
+
+
+.up-arrow{
+    width: 20px;
+    display: none;
+    margin-right: 10px;
+    margin-top: 22px;
+    color: rgb(175, 169, 169);
+    transition: 0.3s;
+}
+
+.down-arrow:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.up-arrow:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.slider{
+    margin: 0 auto;
+    padding: 20px;
+    width: 35rem;
+    display: none;
+    transition: 0.5s;
+}
+
+.sub-slider-outer{
+    margin-bottom: 10px;
+}
+
+.sub-slider{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-name{
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.item-prize{
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 40px;
+}
+
+.cart-icon{
+    color: gray;
+    transition: 0.3s;
+}
+
+.cart-icon:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.item-tag{
+    padding: 4px 5px;
+}
+
+.tag-name{
+    color: white;
+    padding: 1px 3px;
+    border-radius: 5px;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    font-weight: 600;
+}
+
+.Spicy{
+    background-color: rgb(236, 56, 56);
+}
+
+.Chefs-special{
+    background-color: rgb(90, 10, 182);
+}
+
+.Quick-serve{
+    background-color: rgb(39, 21, 201);
+}
+
+.Must-try{
+    background-color: rgb(240, 24, 175);
+}
+
+.None{
+    display: none;
+}
